@@ -1,0 +1,14 @@
+printers:
+  - name: HO-426
+    printer_name: HP-426
+    printer_uri: socket://192.168.0.11:9100
+    printer_ppd: lsb/usr/HP/hp-laserjet_mfp_m426_m427-ps.ppd.gz
+    printer_des: "HP M426 {{ ansible_hostname }}"
+    printer_location: "Living room"
+
+  - name: HP-426-ipp
+    printer_name: HP-426-ipp
+    printer_uri: ipp://192.168.0.11/ipp/printer
+    printer_ppd: everywhere
+    printer_des: "HP M426 IPP {{ ansible_hostname }}"
+    printer_location: "Living room"

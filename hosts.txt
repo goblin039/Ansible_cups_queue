@@ -1,0 +1,2 @@
+[print_servers]
+server ansible_host=192.168.0.10 ansible_port=22 ansible_user=goblin #ansible_become_pass={{ "${S_PASS}" }}

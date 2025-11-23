@@ -1,0 +1,11 @@
+---
+stages:
+  - run
+
+variables:
+  ANSIBLE_BECOME_PASS: $S_PASS
+
+run-ansible-playbook:
+  stage: run
+  script:
+    - ansible-playbook add_printer.yml 
